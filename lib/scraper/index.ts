@@ -5,8 +5,6 @@ import { extractCurrency, extractPrice } from '../utils';
 export async function scrapeAmazonProduct(url: string) {
     if(!url) return;
 
-    // curl --proxy brd.superproxy.io:22225 --proxy-user brd-customer-hl_be553d2c-zone-price_tracker:1y3pd1j7bg2o -k "https://geo.brdtest.com/mygeo.json"
-
     const username = String(process.env.BRIGHT_DATA_USERNAME);
     const password = String(process.env.BRIGHT_DATA_PASSWORD);
     const port = 22225;
